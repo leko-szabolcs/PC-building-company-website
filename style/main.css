@@ -8,6 +8,7 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   font-size:large;
+  
 }
 
 .navbar {
@@ -58,5 +59,14 @@ body {
 
 .navbar a:hover img {
   filter: brightness(0.3); 
+}
+
+.navbar {
+  border: 2px solid red; /* Visible border for debugging */
+  background-color: #333; /* Ensure background color */
+}
+
+.navbar-left, .navbar-right, .navbar-center {
+  border: 1px solid green; /* Border to check layout */
 }
 
