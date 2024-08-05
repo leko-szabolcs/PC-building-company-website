@@ -4,10 +4,17 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: black;
+  overflow: hidden;
 }
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
 }
 
 .navbar {
@@ -15,7 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  padding: 10px;
+  padding: 5px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -61,4 +68,14 @@ body {
   filter: brightness(0.3); 
 }
 
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
 
+.centered-hr {
+  width: 100%;
+}
