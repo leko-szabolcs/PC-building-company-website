@@ -1,6 +1,6 @@
 .footer-navbar {
     display: flex; 
-    position: relative;
+    position:absolute;
     justify-content: space-between;
     bottom: 0;
     width: 100%;
@@ -36,8 +36,4 @@
 
 .footer-navbar a:hover {
     color: #767373;
-}
-
-.nav-link.active {
-    color: green;
 }

@@ -48,7 +48,3 @@
 .navbar a:hover img {
   filter: brightness(0.3); 
 }
-
-.nav-link.active {
-  color: green;
-}

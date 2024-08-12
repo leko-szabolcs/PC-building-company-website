@@ -34,17 +34,30 @@ function includeHTML() {
 }
 
 function setActivePage() {
-    const currentPath = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname;
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    const buttons = document.querySelectorAll('.button');
 
     navLinks.forEach(function(link) {
-        const linkPath = link.getAttribute('href');
+        var linkPath = link.getAttribute('href');
         if (linkPath === currentPath) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
+
+    buttons.forEach(button => {
+        const buttonHref = button.getAttribute('data-href');
+        if (buttonHref === currentPath) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+    
+    
 }
 
 document.addEventListener('DOMContentLoaded', includeHTML);
