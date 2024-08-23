@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" type="text/css" href="..\styles\login.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\footer.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\navbar.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div id="center-container">
+        <div id="login-box">
+            <p class="title">Bejelentkezés</p>
+            <p class="email-txt">E-mail cím</p>
+            <input type="text" id="email" name="email" placeholder="E-mail cím">
+            <div class="password-container">
+                <p class="pass-txt">Jelszó</p>
+                <a href="/pages/forgot_password.html" class="nav-link" id="forgot-password">Elfelejtetted a jelszavadat?</a>
+            </div>
+            <input type="password" id="password" name="password" placeholder="Jelszó">
+            <div class="custom-checkbox-container">
+                <input type="checkbox" id="custom-checkbox" class="custom-checkbox">
+                <label for="custom-checkbox"></label>
+                <span class="checkbox-text">Emlékezz rám</span>
+            </div>
+            <div class="button" id="login" data-href="/main.html">Belépés</div>
+            <div class="register-container">
+                <p class="reg-txt">Még nincs felhasználód?</p>
+                <a href="/pages/register.html" class="nav-link" id="register">Regisztrálj itt</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script src="..\scripts\navbar.js"></script>
+    <script src="..\scripts\login.js"></script>
+</body>
+</html>

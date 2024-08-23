@@ -1,0 +1,166 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  overflow-y: scroll;
+}
+  
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+
+#center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 85px;
+}
+
+#login-box {
+  border-radius: 60px;
+  height: 650px;
+  width: 600px;
+  background-color: #262525;
+}
+
+p {
+ color: white;
+}
+
+.title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 45px;
+  font-size: 20px;
+}
+
+ .email-txt {
+  padding-left: 70px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+ .pass-txt {
+  padding-left: 70px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+
+ input[type="text"], input[type="password"] {
+  width: 450px;
+  height: 90px;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 20px;
+  margin-left: 70px;
+  margin-top: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+ }
+
+ input[type="text"]:focus, input[type="password"]:focus {
+  outline:none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+ }
+
+ .password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ #forgot-password {
+  padding-top: 20px;
+  font-size: 20px;
+  color: whitesmoke;
+  margin-right: 80px;
+  font-weight: 500;
+  text-decoration: none;
+ }
+
+.button {
+  margin-top: 10px;
+  width: 150px;
+  height: 75px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 2px solid white; 
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: auto;  
+  margin-right: auto;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container > *:not(:last-child) {
+  margin-right: 5px;
+}
+
+#register {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.reg-txt {
+  font-size: 20px;
+}
+
+.custom-checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 70px;
+}
+
+.custom-checkbox {
+  display: none;
+}
+
+.custom-checkbox + label {
+  width: 25px;
+  height: 25px; 
+  border-radius: 50%; 
+  background-color: transparent; 
+  border: 2px solid white;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.custom-checkbox:checked + label {
+  background-color: white; 
+}
+
+.checkbox-text {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
