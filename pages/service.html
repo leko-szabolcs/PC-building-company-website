@@ -11,9 +11,32 @@
 <body>
     <div id="navbar-container"></div>
     <div id="center-container">
-
+        <h2 class="main-txt">Nálunk szervizre és alkatrészcserére is lehetőséged van</h2>
+        <p id="option1-txt">Válassz az opciók közül!</p>
+        <p id="option2-txt">Írj üzenetet a problémádról / kérelmedről!</p>
+        <p id="option3-txt">Add meg az e-mail címedet és a nevedet!</p>
+        <div id="buttons">
+            <div class="service-pair">
+                <div class="button-service" id="service">Szerviz</div>
+                <p class="pair-txt">Hibák okainak felfedése, javítás, vírusírtás, esetleges csere</p>
+            </div>
+            <div class="change-pair">
+                <div class="button-change" id="change">Alkatrészcsere</div>
+                <p class="pair-txt">Kívánt hardver kicserélése, valamint szoftver telepítése</p>
+            </div>
+        </div>
+        <div id="message-button">
+            <textarea placeholder="Üzenet"></textarea>
+            <div class="button" id="send">Tovább</div>
+        </div>
+        <div id="email-name">
+            <input placeholder="Név"></input>
+            <input placeholder="E-mail "></input>
+            <div class="button2" id="final_send">Küldés</div>
+        </div>
     </div>
     <div id="footer-container"></div>
     <script src="..\scripts\navbar.js"></script>
+    <script src="..\scripts\service.js"></script>
 </body>
 </html>

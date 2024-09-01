@@ -48,3 +48,8 @@
 .navbar a:hover img {
   filter: brightness(0.3); 
 }
+
+.navbar a .special {
+  width: 130px; 
+  height: 28px; 
+}

@@ -4,14 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Értékelés</title>
-    <link rel="stylesheet" type="text/css" href="..\styles\main.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\review.css">
     <link rel="stylesheet" type="text/css" href="..\styles\footer.css">
     <link rel="stylesheet" type="text/css" href="..\styles\navbar.css">
 </head>
 <body>
     <div id="navbar-container"></div>
+    <div id="center-container">
+        <div id="review-block">
+            <p id="txt1">Értékelések</p>
+            <div class="reviews-container">
+                <div class="review">
+                    <img src="..\pictures\img.jpg" alt="Review Image" class="review-image">
+                    <div class="review-content">
+                        <p class="review-text">Tökéletesem működik!</p>
+                        <p class="review-author">Lékó Szabolcs</p>
+                    </div>
+                    <div class="review-right">
+                        <p class="review-rating">4/5</p>
+                        <img src="..\pictures\star.png" alt="Reviewer Image" class="review-image">
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="..\pictures\img.jpg" alt="Review Image" class="review-image">
+                    <div class="review-content">
+                        <p class="review-text">Folyamatosan füstölt a számítógépem, elküldtem ide és fél nap alatt megoldották a problémát.</p>
+                        <p class="review-author">Kiss Zoltán</p>
+                    </div>
+                    <div class="review-right">
+                        <p class="review-rating">5/5</p>
+                        <img src="..\pictures\star.png" alt="Reviewer Image" class="review-image">
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="..\pictures\img.jpg" alt="Review Image" class="review-image">
+                    <div class="review-content">
+                        <p class="review-text">Imádom ezt az oldalt!</p>
+                        <p class="review-author">Törteli Eszter</p>
+                    </div>
+                    <div class="review-right">
+                        <p class="review-rating">5/5</p>
+                        <img src="..\pictures\star.png" alt="Reviewer Image" class="review-image">
+                    </div>
+                </div>
+            </div>
+            <div class="button" id="nav_to_write">Írj saját értékelést!</div>
+        </div>
+    </div>
     <div id="footer-container"></div>
     <script src="..\scripts\navbar.js"></script>
-    <script src="..\scripts\button.js"></script>
+    <script src="..\scripts\review.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Értékelés</title>
+    <link rel="stylesheet" type="text/css" href="..\styles\review_write.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\footer.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\navbar.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div id="center-container">
+        <div id="write-block">
+            <p id="txt1">Értékelj minket</p>
+            <p id="txt2">Fontos számunkra a visszajelzésed!</p>
+            <div id="pic-upload">
+                <label for="file-upload" id="upload-label">
+                    <img src="..\pictures\img.jpg" alt="Upload Image" id="upload-image">
+                    <p>Fotó hozzáadása</p>
+                </label>
+                <input type="file" id="file-upload" accept=".png, .jpg, .jpeg">
+            </div>
+            <input placeholder="Név"></input>
+            <p id="txt3">Üzenet:</p>
+            <textarea placeholder="Szöveg"></textarea>
+            <p id="txt4">Maximum 100 karakter lehet!</p>
+            <div class="button" id="send">Küldés</div>
+        </div> 
+    </div>
+    <div id="footer-container"></div>
+    <script src="..\scripts\navbar.js"></script>
+    <script src="..\scripts\review_write.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+    
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;
+}
+  
+#center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: white;
+}
+
+#txt1 {
+font-size: 27px;
+}
+
+#txt2, #txt3  {
+font-size: 20px;
+font-weight: 100;
+}
+
+#txt2 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#email-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 750px;
+}
+
+#txt3 {
+    align-self: flex-start; 
+    margin-top: 23px; 
+    margin-bottom: 20px;
+}
+  
+input {
+    background-color: transparent;
+    width: 750px;
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 22px;
+    outline: none; 
+    box-sizing: border-box; 
+}
+  
+input:hover, input:focus {
+    border-style: none;
+    border-bottom: 2px solid white;
+}
+
+textarea {
+    width: 750px;
+    height: 250px;
+    font-size: 20px;
+    border-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    text-align: left;
+    overflow: hidden;
+    line-height: 1.5;
+    display: block;
+}
+  
+textarea {
+    vertical-align: top;
+}
+
+.button {
+    margin-top: 15px;
+    width: 150px;
+    height: 75px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid white; 
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
