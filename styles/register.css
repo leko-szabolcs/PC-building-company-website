@@ -22,12 +22,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 85px;
+    padding: 80px;
 }
   
 #register-box {
     border-radius: 60px;
-    height: 650px;
+    height: 655px;
     width: 600px;
     background-color: #262525;
 }

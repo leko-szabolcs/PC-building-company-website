@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+    
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;
+}
+  
+#center-container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#left-container, #middle-container, #right-container {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+#middle-container {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.prof {
+    margin-top: 100px;
+    height: 125px;
+    width: 125px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.email {
+    font-size: 17px;
+    margin-top: 35px;
+    font-weight: 100;
+}
+
+
+p {
+    color: white;
+}
+
+.button {
+    margin-top: 61px;
+    width: 275px;
+    height: 75px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid white; 
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-bottom: 31.5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+#delete_acc2 {
+    display: none;
+}
+
+#left-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+#unsub {
+    display:none;
+}
+
+.txt {
+    text-align: center;
+    font-size: 17px;
+    width: 300px;
+    font-weight: 100;
+}
+
+#unsub, #signup {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    width: 275px;
+    height: 55px;
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.txt2 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 100px;
+}
+
+.pc-txt{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none; 
+}
+
+
+.pc{
+    margin-top: 10px;
+    width: 220px;
+    height: 220px;
+    
+}
+
+.pcc {
+    font-weight: 100;
+}

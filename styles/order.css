@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+    
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;
+}
+  
+#center-container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#left-container, #right-container {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+#left-container {
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+#billing_info, #payment_option {
+    flex: 1; 
+}
+
+#billing_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#names {
+    display: flex;
+    gap: 40px;
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 182px;
+}
+
+p {
+    color: white;
+}
+
+.txt {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+#items {
+    margin-top: 120px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 75px;
+}
+
+.pc {
+    width: 250px;
+    height: 250px;
+}
+
+#price-container, #full-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    max-width: 280px; 
+}
+
+#full-price-container {
+    border-top: 2px solid white;
+}
+
+ .price-txt, .price {
+    flex: 0 1 auto; 
+    width: auto; 
+    text-align: left; 
+    margin: 0; 
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.price {
+    text-align: right;
+    margin-left: 10px; 
+}
+
+.button {
+    width: 275px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid white; 
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-bottom: 11px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+input[type="text1"] {
+    width: 350px;
+    height: 60px;
+    border-style: none;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input[type="text2"] {
+    width: 745px;
+    height: 60px;
+    border-style: none;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+}
+
+#city-province {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+#postalcode {
+    margin-left: -395px; /* Adjust the vertical spacing if needed */
+}
+  
+input[type="text1"]:focus, input[type="text2"]:focus {
+    outline:none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#payment_option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#exp-code {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+.custom-radio-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.custom-radio {
+    display: none;
+}
+
+.custom-radio + label {
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%; 
+    background-color: black; 
+    border: 2px solid white; 
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.custom-radio:checked + label {
+    background-color: white; 
+}
+
+.radio-text {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+#double-radio {
+    display: flex;
+    margin-bottom: 30px;
+}
+

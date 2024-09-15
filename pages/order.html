@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..\styles\order.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\footer.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\navbar.css">
+    <title>Rendelés</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div id="center-container">
+        <div id="left-container">
+            <div id="billing_info">
+                <p class="txt">Számlázási adatok</p>
+                <div id="names">
+                    <input type="text1" id="surname" name="surname" placeholder="Vezetéknév">
+                    <input type="text1" id="firstname" name="firstname" placeholder="Keresztnév">
+                </div>
+                <input type="text2" id="address" name="address" placeholder="Cím (utca)">
+                <div id="city-province">
+                    <input type="text1" id="city" name="city" placeholder="Város">
+                    <input type="text1" id="province" name="province" placeholder="Tartomány">
+                </div>
+                <input type="text1" id="postalcode" name="postalcode" placeholder="Írányítószám">
+            </div>
+            <div id="payment_option">
+                <p class="txt">Fizetési mód</p>
+                <div id="double-radio">
+                    <div class="custom-radio-container">
+                        <input type="radio" id="cash-radio" name="payment_method" class="custom-radio" checked>
+                        <label for="cash-radio"></label>
+                        <span class="radio-text">Készpénz</span>
+                    </div>
+                    <div class="custom-radio-container">
+                        <input type="radio" id="card-radio" name="payment_method" class="custom-radio">
+                        <label for="card-radio"></label>
+                        <span class="radio-text">Kártya</span>
+                    </div>
+                </div>
+                <input type="text2" id="cardnumber" name="cardnumber" placeholder="Bankártya száma" disabled>
+                <div id="exp-code">
+                    <input type="text1" id="exp_date" name="exp_date" placeholder="Lejárati dátum" disabled>
+                    <input type="text1" id="code" name="code" placeholder="Kód" disabled>
+                </div>
+                <div class="button" id="order">Rendelés</div>
+            </div>
+        </div>
+        <div id="right-container">
+            <p class="txt">Kosár tartalma</p>
+            <div id="items">
+                <img src="..\pictures\pc_example.jpg" alt="pc" class="pc">
+                <img src="..\pictures\pc_example_2.jpg" alt="pc" class="pc">
+            </div>
+            <div id="price-container">
+                <p class="price-txt">1x számítógép</p>
+                <p class="price">157.000Ft</p>
+            </div>
+            <div id="price-container">
+                <p class="price-txt">1x laptop</p>
+                <p class="price">300.000Ft</p>
+            </div>
+            <div id="full-price-container">
+                <p class="price-txt">Összesen:</p>
+                <p class="price">457.000Ft</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+
+    <script src="..\scripts\navbar.js"></script>
+    <script src="..\scripts\order.js"></script>
+</body>
+</html>
