@@ -3,14 +3,13 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-image: url("../pictures/background.jpg");
     overflow: hidden;
 }
   
 body {
     font-family: Arial, sans-serif;
     font-weight: bold;
-    overflow-y: scroll;
 }
     
 ::-webkit-scrollbar {
@@ -29,7 +28,8 @@ body {
     border-radius: 60px;
     height: 655px;
     width: 600px;
-    background-color: #262525;
+    background-color: black;
+    border: 2px solid white;
 }
 
 p {

@@ -3,14 +3,13 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-image: url("../pictures/background.jpg");
     overflow: hidden;
 }
   
 body {
     font-family: Arial, sans-serif;
     font-weight: bold;
-    overflow-y: scroll;
 }
     
 ::-webkit-scrollbar {
@@ -210,5 +209,14 @@ input[type="text1"]:focus, input[type="text2"]:focus {
 #double-radio {
     display: flex;
     margin-bottom: 30px;
+}
+
+input::placeholder {
+    transition: opacity 0.3s ease; /* Smooth transition when hiding */
+}
+
+input:focus::placeholder {
+    opacity: 0; /* Hide the placeholder when focused */
+    transition: opacity 0.3s ease; /* Smooth transition back when unfocused */
 }
 

@@ -3,15 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC-k</title>
-    <link rel="stylesheet" type="text/css" href="..\styles\main.css">
+    <title>Választék</title>
+    <link rel="stylesheet" type="text/css" href="..\styles\browse.css">
     <link rel="stylesheet" type="text/css" href="..\styles\footer.css">
     <link rel="stylesheet" type="text/css" href="..\styles\navbar.css">
 </head>
 <body>
     <div id="navbar-container"></div>
+    <div id="center-container">
+        <div id="filter-container">
+            <div id="processor-type">
+                <p id="type-txt">Processzor</p>
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 1</span>
+                    <input type="checkbox" id="type1-checkbox" class="custom-checkbox">
+                    <label for="type1-checkbox"></label>
+                </div>
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 2</span>
+                    <input type="checkbox" id="type2-checkbox" class="custom-checkbox">
+                    <label for="type2-checkbox"></label>
+                </div>  
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 3</span>
+                    <input type="checkbox" id="type3-checkbox" class="custom-checkbox">
+                    <label for="type3-checkbox"></label>
+                </div>
+            </div>
+            <div id="videocard-type">
+                <p id="type-txt2">Videókártya</p>
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 1</span>
+                    <input type="checkbox" id="type12-checkbox" class="custom-checkbox">
+                    <label for="type12-checkbox"></label>
+                </div>
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 2</span>
+                    <input type="checkbox" id="type22-checkbox" class="custom-checkbox">
+                    <label for="type22-checkbox"></label>
+                </div>  
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 3</span>
+                    <input type="checkbox" id="type32-checkbox" class="custom-checkbox">
+                    <label for="type32-checkbox"></label>
+                </div>
+            </div>
+            <div id="memory-type">
+                <p id="type-txt3">Memória</p>
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 1</span>
+                    <input type="checkbox" id="type13-checkbox" class="custom-checkbox">
+                    <label for="type13-checkbox"></label>
+                </div>
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 2</span>
+                    <input type="checkbox" id="type23-checkbox" class="custom-checkbox">
+                    <label for="type23-checkbox"></label>
+                </div>  
+                <div class="custom-checkbox-container">
+                    <span class="checkbox-text">Típus 3</span>
+                    <input type="checkbox" id="type33-checkbox" class="custom-checkbox">
+                    <label for="type33-checkbox"></label>
+                </div>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="search-container">
+                <div id="search-bar">
+                    <input type="text" id="search" name="search" placeholder="Keresés">
+                    <button id="search-btn" type="button"></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropdownButton">Szűrő</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-value="Ár szerint csökkenő">Ár szerint csökkenő</a>
+                        <a href="#" data-value="Ár szerint növekvő">Ár szerint növekvő</a>
+                        <a href="#" data-value="Legújabb">Legújabb</a>
+                        <a href="#" data-value="Legrégibb">Legrégibb</a>
+                    </div>
+                </div>
+            </div>
+            <div id="pc-container">
+                <div id="scrollable-content">
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example.jpg" alt="pc">
+                        </div>
+                        <p>Pc-11</p>
+                    </div>
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example.jpg" alt="pc">
+                        </div>
+                        <p>Pc-12</p>
+                    </div>
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example.jpg" alt="pc">
+                        </div>
+                        <p>Pc-13</p>
+                    </div>
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example_2.jpg" alt="pc">
+                        </div>
+                        <p>Pc-21</p>
+                    </div>
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example_2.jpg" alt="pc">
+                        </div>
+                        <p>Pc-22</p>
+                    </div>
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example_2.jpg" alt="pc">
+                        </div>
+                        <p>Pc-23</p>
+                    </div>
+                    <div id="item">
+                        <div id="item-pic">
+                            <img src="..\pictures\pc_example.jpg" alt="pc">
+                        </div>
+                        <p>Pc-31</p>
+                    </div>
+                </div>
+                <div id="custom-scrollbar">
+                    <div id="scroll-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="footer-container"></div>
     <script src="..\scripts\navbar.js"></script>
-    <script src="..\scripts\button.js"></script>
+    <script src="..\scripts\browse.js"></script>
 </body>
 </html>

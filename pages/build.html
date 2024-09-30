@@ -4,14 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Építsd meg</title>
-    <link rel="stylesheet" type="text/css" href="..\styles\main.css">
+    <link rel="stylesheet" type="text/css" href="..\styles\build.css">
     <link rel="stylesheet" type="text/css" href="..\styles\footer.css">
     <link rel="stylesheet" type="text/css" href="..\styles\navbar.css">
 </head>
 <body>
     <div id="navbar-container"></div>
+    <p class="top-txt">Válaszd ki az alkatrészeket és alkosd meg álmaid PC-jét!</p>
+    <div id="center-container">
+        <div id="left-container">
+
+        </div>
+        <div id="right-container">
+            <div class="dropdown_cpu">
+                <button class="dropbtn_cpu" id="dropdownButton_cpu">Processzor<img src="..\pictures\arrow-black.png" alt="Fehasználó"></button>
+                <div class="dropdown-content_cpu" id="dropdown-content_cpu">
+                    <a href="#" id="data" data-value="Típus 1">Típus 1</a>
+                    <a href="#" id="data" data-value="Típus 2">Típus 2</a>
+                    <a href="#" id="data" data-value="Típus 3">Típus 3</a>
+                    <a href="#" id="data" data-value="Típus 4">Típus 4</a>
+                </div>
+            </div>
+            <div class="dropdown_motherboard" id="dropdown_motherboard">
+                <button class="dropbtn_motherboard" id="dropdownButton_motherboard">Alaplap<img src="..\pictures\arrow-black.png" alt="Fehasználó"></button>
+                <div class="dropdown-content_motherboard" id="dropdown-content_motherboard">
+                    <a href="#" id="data" data-value="Típus 1">Típus 1</a>
+                    <a href="#" id="data" data-value="Típus 2">Típus 2</a>
+                    <a href="#" id="data" data-value="Típus 3">Típus 3</a>
+                    <a href="#" id="data" data-value="Típus 4">Típus 4</a>
+                </div>
+            </div>
+            <div class="dropdown_memory" id="dropdown_memory">
+                <button class="dropbtn_memory" id="dropdownButton_memory">Memória<img src="..\pictures\arrow-black.png" alt="Fehasználó"></button>
+                <div class="dropdown-content_memory" id="dropdown-content_memory">
+                    <a href="#" id="data" data-value="Típus 1">Típus 1</a>
+                    <a href="#" id="data" data-value="Típus 2">Típus 2</a>
+                    <a href="#" id="data" data-value="Típus 3">Típus 3</a>
+                    <a href="#" id="data" data-value="Típus 4">Típus 4</a>
+                </div>
+            </div>
+            <div class="dropdown_gpu" id="dropdown_gpu">
+                <button class="dropbtn_gpu" id="dropdownButton_gpu">Videókártya<img src="..\pictures\arrow-black.png" alt="Fehasználó"></button>
+                <div class="dropdown-content_gpu" id="dropdown-content_gpu">
+                    <a href="#" id="data" data-value="Típus 1">Típus 1</a>
+                    <a href="#" id="data" data-value="Típus 2">Típus 2</a>
+                    <a href="#" id="data" data-value="Típus 3">Típus 3</a>
+                    <a href="#" id="data" data-value="Típus 4">Típus 4</a>
+                </div>
+            </div>
+            <div class="dropdown_hardDrive" id="dropdown_hardDrive">
+                <button class="dropbtn_hardDrive" id="dropdownButton_hardDrive">Merevlemez<img src="..\pictures\arrow-black.png" alt="Fehasználó"></button>
+                <div class="dropdown-content_hardDrive" id="dropdown-content_hardDrive">
+                    <a href="#" id="data" data-value="Típus 1">Típus 1</a>
+                    <a href="#" id="data" data-value="Típus 2">Típus 2</a>
+                    <a href="#" id="data" data-value="Típus 3">Típus 3</a>
+                    <a href="#" id="data" data-value="Típus 4">Típus 4</a>
+                </div>
+            </div>
+            <p id="hidden">A második háttértároló lehetőségét e-mailben beszéljük meg!</p>
+            <div class="dropdown_psu" id="dropdown_psu">
+                <button class="dropbtn_psu" id="dropdownButton_psu">Tápegység<img src="..\pictures\arrow-black.png" alt="Fehasználó"></button>
+                <div class="dropdown-content_psu" id="dropdown-content_psu">
+                    <a href="#" id="data" data-value="Típus 1">Típus 1</a>
+                    <a href="#" id="data" data-value="Típus 2">Típus 2</a>
+                    <a href="#" id="data" data-value="Típus 3">Típus 3</a>
+                    <a href="#" id="data" data-value="Típus 4">Típus 4</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="center-bottom-container">
+        <div class="button" id="send" data-href="/main.html">Küldés</div>
+        <p class="bottom-txt" id="bottom-txt">Küld el a koncepciódat és kollégáinkkal pár munkanapon belül visszaírunk az árral és az észrevételekkel kapcsolatban!</p>
+    </div>
     <div id="footer-container"></div>
     <script src="..\scripts\navbar.js"></script>
-    <script src="..\scripts\button.js"></script>
+    <script src="..\scripts\build.js"></script>
 </body>
 </html>

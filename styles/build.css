@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../pictures/background.jpg");
+    overflow: hidden;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+    
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;
+}
+  
+#center-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+p {
+    color: white;
+}
+
+.top-txt {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#left-container, #right-container {
+    flex: 0 0 50%;
+    height: 743px;
+}
+#right-container {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown_cpu {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.dropbtn_cpu, .dropbtn_motherboard, .dropbtn_memory, .dropbtn_gpu, .dropbtn_hardDrive, .dropbtn_psu {
+    background-color: white;
+    color: black;
+    height: 60px;
+    font-size: 16px;
+    border: 2px solid black;
+    cursor:pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    width: 300px;
+    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-content_cpu, .dropdown-content_motherboard, .dropdown-content_memory, .dropdown-content_gpu, .dropdown-content_hardDrive, .dropdown-content_psu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 297px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.dropdown-content_cpu a, .dropdown-content_motherboard a, .dropdown-content_memory a, .dropdown-content_gpu a, .dropdown-content_hardDrive a, .dropdown-content_psu a    {
+    color: black;
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+.dropdown-content_cpu a:last-child, .dropdown-content_motherboard a:last-child, .dropdown-content_memory a:last-child, .dropdown-content_gpu a:last-child, .dropdown-content_hardDrive a:last-child, .dropdown-content_psu a:last-child {
+    border-bottom: none;
+}
+
+
+.dropdown_cpu:hover .dropdown-content_cpu, .dropdown_motherboard:hover .dropdown-content_motherboard, .dropdown_memory:hover .dropdown-content_memory, .dropdown_gpu:hover .dropdown-content_gpu, .dropdown_hardDrive:hover .dropdown-content_hardDrive, .dropdown_psu:hover .dropdown-content_psu {
+    display: block;
+}
+
+img {
+    width:20px;
+    height: 20px;
+}
+
+.dropdown_motherboard, .dropdown_memory, .dropdown_gpu, .dropdown_hardDrive, .dropdown_psu   {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    display: none;
+}
+
+.dropdown_psu {
+    margin-top: 10px;
+}
+
+#hidden {
+    display: none;
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    width: 150px;
+    height: 75px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border: 2px solid white; 
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;  
+    margin-right: auto;
+}
+  
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+#center-bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 143px;
+}
+
+.bottom-txt {
+    width: 470px;
+    text-align: center;
+    display: none;
+}
+

@@ -2,15 +2,14 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  background-color: black;
+  height: 100%; 
+  background-image: url("../pictures/background.jpg");
   overflow: hidden;
 }
 
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  overflow-y: scroll;
 }
   
 ::-webkit-scrollbar {
@@ -18,12 +17,12 @@ body {
   background: transparent;
 }
   
-.center-container {
+#center-container {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 h2 {
@@ -39,7 +38,7 @@ h2 {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 10px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #option1-txt {
@@ -48,7 +47,7 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  padding-top: 180px;
+  padding-top: 50px;
 }
 
 #option2-txt, #option3-txt {
@@ -56,15 +55,15 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  padding-top: 180px;
   display: none;
+  padding-top: 50px;
 }
 
 #buttons {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 118px;
 }
 
@@ -114,7 +113,7 @@ h2 {
 
 textarea {
   width: 850px;
-  height: 350px;
+  height: 320px;
   font-size: 20px;
   border-style: none;
   padding: 10px;
@@ -192,7 +191,7 @@ input {
   width: 750px;
   height: 90px;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   border: none;
   border-bottom: 2px solid white;
   color: white;
@@ -204,5 +203,14 @@ input {
 input:hover, input:focus {
   border-style: none;
   border-bottom: 2px solid white;
+}
+
+img {
+  width: 510px;
+  height:160px;
+}
+
+#hidden-image, #hidden-image2 {
+  display: none;
 }
 

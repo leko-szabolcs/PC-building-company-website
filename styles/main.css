@@ -3,13 +3,13 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  overflow: hidden;
+  overflow: hidden;  
+  background-image: url("../pictures/background.jpg");
 }
+
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: -3px;
+  margin-bottom: -2px;
 }
 
 .centered-hr {

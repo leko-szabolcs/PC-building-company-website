@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 5px;
+  background-color: black;
+  border-bottom: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
   overflow: hidden;
   box-sizing: border-box;
+  height: 65px;
+  position: relative;
 }
   
 .navbar-left, .navbar-right, .navbar-center {
@@ -19,7 +23,9 @@
   
 .navbar-center {
   flex-grow: 1;
+  align-items: center;
   justify-content: center;
+  margin-left: -20px;
 }
   
 .navbar-right {
@@ -52,4 +58,10 @@
 .navbar a .special {
   width: 130px; 
   height: 28px; 
+
+}
+
+.navbar a .special:hover {
+  filter:none;
+  color: none;
 }
