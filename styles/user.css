@@ -141,3 +141,51 @@ p {
 .pcc {
     font-weight: 100;
 }
+
+@media (max-width: 1919px) {
+    .prof {
+        margin-top: 75px;
+        height: 125px;
+        width: 125px;
+    }
+    
+    .email {
+        font-size: 17px;
+        margin-top: 25.2px;
+        font-weight: 100;
+    }
+    
+    .button {
+        margin-top: 35px;
+        width: 255px;
+        height: 55px;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    
+    .txt {
+        font-size: 17px;
+        width: 300px;
+        font-weight: 100;
+    }
+    
+    #unsub, #signup {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        width: 255px;
+        height: 55px;
+    }
+    
+    .txt2 {
+        font-size: 17px;
+        font-weight: 100;
+        margin-top: 40px;
+    }
+
+    .pc{
+        margin-top: 10px;
+        width: 190px;
+        height: 190px;    
+    }
+    
+}

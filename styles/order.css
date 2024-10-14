@@ -154,7 +154,7 @@ input[type="text2"] {
 }
 
 #postalcode {
-    margin-left: -395px; /* Adjust the vertical spacing if needed */
+    margin-left: -395px; 
 }
   
 input[type="text1"]:focus, input[type="text2"]:focus {
@@ -212,11 +212,109 @@ input[type="text1"]:focus, input[type="text2"]:focus {
 }
 
 input::placeholder {
-    transition: opacity 0.3s ease; /* Smooth transition when hiding */
+    transition: opacity 0.3s ease; 
 }
 
 input:focus::placeholder {
-    opacity: 0; /* Hide the placeholder when focused */
-    transition: opacity 0.3s ease; /* Smooth transition back when unfocused */
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1919px) {
+    #names {
+        gap: 30px;
+    }
+    
+    #right-container {
+        margin-bottom: 100px;
+    }
+    
+    #txt {
+        margin-top: 5px;
+    }
+
+    .txt {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    #items {
+        margin-top: 80px;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .pc {
+        width: 240px;
+        height: 240px;
+    }
+    
+    #price-container, #full-price-container {
+        width: 100%; 
+        max-width: 300px; 
+    }
+    
+     .price-txt, .price {
+        margin: 0; 
+        margin-top: 5px;
+        font-size: 19px;
+    }
+    
+    .price {
+        margin-left: 10px; 
+    }
+    
+    .button {
+        width: 220px;
+        height: 53px;
+        font-size: 19px;
+    }
+    
+    input[type="text1"] {
+        width: 330px;
+        height: 43px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="text2"] {
+        width: 695px;
+        height: 43px;
+        font-size: 18px;
+    }
+    
+    #city-province {
+        margin-top: 20px;
+        gap: 30px;
+    }
+    
+    #postalcode {
+        margin-left: -365px;
+        margin-bottom: 18.5px;
+    }
+    
+    #exp-code {
+        margin-top: 20px;
+        gap: 30px;
+    }
+    .custom-radio-container {
+        padding-left: 20px;
+    }
+    
+    .custom-radio + label {
+        width: 20px;
+        height: 20px; 
+        border-radius: 50%; 
+    }
+    
+    .radio-text {
+        font-size: 19px;
+        margin-left: 5px;
+    }
+    
+    #double-radio {
+        margin-bottom: 20px;
+    }
+    
 }
 

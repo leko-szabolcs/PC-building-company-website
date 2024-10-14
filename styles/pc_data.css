@@ -321,3 +321,266 @@ img {
     font-weight: 100;
 }
 
+@media (max-width: 1919px) {
+    #center-container {
+        margin-top: 46px;
+        margin-bottom: 40px;
+    }
+    
+    #big-pc {
+        width: 400px;
+        height: 400px;
+    }
+    
+    img {
+        width: 90%;
+        height: 90%;
+    }
+    
+    #small-pcs {
+        margin-top: 20px;
+    }
+    
+    #small-pc1, #small-pc2, #small-pc3 {
+        width: 93px;
+        height: 93px;
+    }
+    
+    #small-pc2 {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    
+    .button {
+        width: 130px;
+        height: 65px;
+        font-size: 18px;
+    }
+    
+    #right-container {
+        height: 100%;
+        margin-left: 100px;
+    }
+    
+    #button-price {
+        margin-top: 40px;
+    }
+    
+    #price {
+        margin-left: 20px;
+    }
+    
+    .button img {
+        width: 26px;
+        height: 26px;
+    }
+    
+    #datas {
+        width: 850px;
+        height: 400px;
+        gap: 20px;
+    }
+    
+    #right-box {
+        margin-left: 20px;
+    }
+    
+    #processor {
+        display: flex;
+        margin-left: 50px;
+        margin-top: 5px;
+        font-weight: 100;
+    }
+
+    #psu {
+        margin-top: 5px;
+    }
+
+    #gpu {
+        margin-left: 48px;
+        margin-top: 20px;
+    }
+    
+    #type-txt, #type-txt2, #type-txt3, #type-txt4, #type-txt5, #type-txt6, #type-txt7, #type-txt8 {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    #type-txt::after, #type-txt::before {
+        left: -30%; 
+        right: -30%; 
+        height: 2.5px; 
+        background-color: white;
+    }
+    #type-txt2::after, #type-txt2::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -78%; 
+        right: -75%; 
+        height: 3px; 
+        background-color: white;
+    }
+    #type-txt3::after, #type-txt3::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -60%; 
+        right: -60%; 
+        height: 2px; 
+        background-color: white;
+    }
+    
+    #type-txt4::after, #type-txt4::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -35%; 
+        right: -35%; 
+        height: 2px; 
+        background-color: white;
+    }
+    
+    #type-txt5::after, #type-txt5::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0%; 
+        right: 0%; 
+        height: 2.5px; 
+        background-color: white;
+    }
+    
+    #type-txt6::after, #type-txt6::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -50%; 
+        right: -45%; 
+        height: 2.5px; 
+        background-color: white;
+    }
+    
+    #type-txt7::after, #type-txt7::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -13%; 
+        right: -10%; 
+        height: 2px; 
+        background-color: white;
+    }
+    
+    #type-txt8::after, #type-txt8::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -17%; 
+        right: -17%; 
+        height: 2px; 
+        background-color: white;
+    }
+    
+    #proc-data {
+        margin-left: 130px;
+        font-size: 18px;
+    }
+
+    #psu-data {
+        margin-left: 120px;
+        font-size: 18px;
+    }
+    
+    #gpu-data {
+        margin-left: 128px;
+        font-size: 18px;
+    }
+
+    #ssd1-data {
+        margin-left: 120px;
+        font-size: 18px;
+    }
+    
+    #ssd2-data {
+        margin-left: 103px;
+        font-size: 18px;
+    }
+    
+    #mother-data {
+        margin-left: 140px;
+        font-size: 18px;
+    }
+    
+    #memory-data {
+        margin-left: 135px;
+        font-size: 18px;
+    }
+    
+    #opsys-data {
+        margin-left: 86px;
+        font-size: 18px;
+    }
+    
+    #vent-data {
+        margin-left: 123px;
+        font-size: 18px;
+    }
+    
+    #case-data {
+        margin-left: 98px;
+        font-size: 18px;
+    }
+    
+    
+    #motherboard {
+        display: flex;
+        margin-left: 70px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #ssd1 {
+        display: flex;
+        margin-left: 55px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #ssd2 {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #memory {
+        display: flex;
+        margin-left: 65px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #opsys {
+        display: flex;
+        margin-left: 15px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #ventillation {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    
+    #case {
+        display: flex;
+        margin-left: 35px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+}
+

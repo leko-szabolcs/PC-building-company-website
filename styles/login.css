@@ -164,3 +164,111 @@ p {
   color: white;
   margin-left: 10px;
 }
+
+@media (max-width: 1919px) {
+  #login-box {
+    height: 500px;
+    width: 500px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .email-txt {
+    font-size: 18px;
+    padding-left: 70px;
+    padding-top: 20px;
+  }
+
+  .pass-txt {
+    padding-left: 70px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+
+  #register {
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .reg-txt {
+    font-size: 18px;
+  }
+
+  .checkbox-text {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+  }
+
+  .custom-checkbox-container {
+    padding-top: 10px;
+    padding-left: 70px;
+  }
+  
+  .custom-checkbox {
+    display: none;
+  }
+  
+  .custom-checkbox + label {
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    border: 2px solid white;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .button {
+    margin-top: 15px;
+    width: 130px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid white; 
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;  
+    margin-right: auto;
+  }
+  
+  #forgot-password {
+    padding-top: 10px;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-right: 80px;
+    font-weight: 500;
+    text-decoration: none;
+   }
+
+   #center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 51px;
+  }
+}

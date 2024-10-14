@@ -89,3 +89,43 @@ input[type="password"]:focus {
     background-color: white;
     color: black;
 }
+
+@media (max-width: 1919px) {
+    #center-container {
+        padding: 39px;
+    }
+    
+    #newp-box {
+        border-radius: 60px;
+        height: 525px;
+        width: 500px;
+    }
+
+    .title {
+        padding-top: 35px;
+        font-size: 18px;
+    }
+    
+    .pass-txt {
+        padding-left: 70px;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    
+    input[type="password"] {
+        width: 350px;
+        height: 70px;
+        border-radius: 16px;
+        font-size: 18px;
+        margin-left: 70px;
+        margin-top: 5px;
+    }
+    
+    .button {
+        margin-top: 50px;
+        width: 140px;
+        height: 70px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+}

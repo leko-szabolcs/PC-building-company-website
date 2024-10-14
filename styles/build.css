@@ -163,3 +163,82 @@ img {
     display: none;
 }
 
+@media (max-width: 1919px) {
+    #center-container {
+        height: 403.5px;
+    }
+    
+    .top-txt {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+    #left-container, #right-container {
+        flex: 0 0 50%;
+        height: 400px;
+    }
+
+    .dropdown_cpu {
+        position: relative;
+        display: inline-block;
+        margin-top: 0px;
+    }
+    
+    .dropbtn_cpu, .dropbtn_motherboard, .dropbtn_memory, .dropbtn_gpu, .dropbtn_hardDrive, .dropbtn_psu {
+        height: 55px;
+        font-size: 16px;
+        width: 250px;
+    }
+    
+    .dropdown-content_cpu, .dropdown-content_motherboard, .dropdown-content_memory, .dropdown-content_gpu, .dropdown-content_hardDrive, .dropdown-content_psu {
+        min-width: 246.5px;
+    }
+    
+    .dropdown-content_cpu a, .dropdown-content_motherboard a, .dropdown-content_memory a, .dropdown-content_gpu a, .dropdown-content_hardDrive a, .dropdown-content_psu a    {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    
+    img {
+        width:18px;
+        height: 18px;
+    }
+    
+    .dropdown_motherboard, .dropdown_memory, .dropdown_gpu, .dropdown_hardDrive, .dropdown_psu   {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+        display: none;
+    }
+    
+    .dropdown_psu {
+        margin-top: 5px;
+    }
+    
+    #hidden {
+        display: none;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+    .button {
+        margin-top: 10px;
+        width: 140px;
+        height: 65px;
+        font-size: 18px;
+        border-radius: 9px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    
+    #center-bottom-container {
+        width: 100%;
+        height: 143px;
+    }
+    .bottom-txt {
+        width: 470px;
+        font-size: 15px;
+    }
+}
+

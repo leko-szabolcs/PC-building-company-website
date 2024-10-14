@@ -30,28 +30,26 @@ body {
 }
 
 .pc {
-  height: 400px;
-  width: 400px;
+  width: 30%;
+  height: 30%; /* Now it's relative to the container width */
+  max-height: 400px; /* Maintain aspect ratio */
+  max-width: 400px; /* Ensure it doesn't get too large on bigger screens */
   margin-left: 200px;
 }
 
-.top-container {
+.top-container, .bottom-container {
   display: flex;
   align-items: center;
   gap: 350px;
+  text-align: center;
 }
 
-.bottom-container {
-  display: flex;
-  align-items: center;
-  gap: 350px;
-}
 
 .button {
-  padding: 30px 200px;
+  padding: 30px 10vw;
   background-color: transparent;
   color: white;
-  font-size: 20px;
+  font-size: 1vw;
   text-align: center;
   border: 2px solid white; 
   border-radius: 5px;
@@ -62,7 +60,7 @@ body {
 }
 
 .bottom-container .button {
-  padding: 30px 215px;
+  padding: 30px 11vw;
   
 }
 
@@ -72,12 +70,40 @@ body {
 }
 
 .text {
-  margin-top: 55px; 
+  margin-top: 2vw;
   color: white;
-  font-size: 16px;
+  font-size: 0.95vw;
   text-align: left;
 }
 
 a {
   text-decoration: none;
 }
+
+
+@media (max-width: 1919px) {
+  .top-container, .bottom-container {
+    gap: 300px;
+    padding: 10px;
+  }
+
+  .button {
+    padding: 20px 9vw; 
+    font-size: 1.5vw; 
+  }
+
+  .bottom-container .button {
+    padding: 20px 10vw;
+    font-size: 1.5vw; 
+  }
+
+  .pc {
+    width: 275px; 
+    height: 275px;
+  }
+
+  .text {
+    font-size: 1vw; 
+  }
+}
+

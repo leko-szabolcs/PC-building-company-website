@@ -214,3 +214,83 @@ img {
   display: none;
 }
 
+@media (max-width: 1919px) {
+  h2 {
+    font-size: 24px;
+  }
+  
+  .main-txt {
+    padding-top: 20px;
+  }
+  
+  #option1-txt {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  
+  #option2-txt, #option3-txt {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  
+  #buttons {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  
+  #buttons > *:not(:last-child) {
+    margin-right: 125px;
+  }
+  
+  .button-service, .button-change {
+    width: 200px;
+    height: 90px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .pair-txt  {
+    font-weight: 100;
+    font-size: 18px;
+  }
+
+  textarea {
+    width: 650px;
+    height: 200px;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1.5;
+  }
+  
+  .button {
+    margin-top: 15px;
+    width: 150px;
+    height: 65px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+  }
+  
+  .button2 {
+    margin-top: 15px;
+    width: 150px;
+    height: 65px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  
+  input {
+    width: 550px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  img {
+    width: 410px;
+    height:130px;
+  }
+}
+

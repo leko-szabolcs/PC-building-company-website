@@ -89,3 +89,60 @@ input[type="text"]:focus {
     background-color: white;
     color: black;
 }
+
+@media (max-width: 1919px) {
+
+    #center-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 101px;
+    }
+    #forgot-box {
+        height: 400px;
+        width: 550px;
+    }
+
+    .button {
+        margin-top: 50px;
+        width: 130px;
+        height: 70px;
+        background-color: transparent;
+        color: white;
+        font-size: 19px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border: 2px solid white; 
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none; 
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-left: auto;  
+        margin-right: auto;
+    }
+
+    .email-txt {
+        padding-left: 90px;
+        padding-top: 40px;
+        font-size: 19px;
+    }
+    
+    input[type="text"] {
+        width: 370px;
+        height: 70px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: 19px;
+        margin-left: 90px;
+        margin-top: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    }
+    .title {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 25px;
+        font-size: 19px;
+    }
+  }
