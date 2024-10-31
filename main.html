@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="navbar-container"></div>
+    
     <div class="top-container">
         <img src="..\pictures\pc_example.jpg" alt="PC" class="pc">
         <div>
@@ -27,6 +28,19 @@
         <p class="text">Válogass a kész számítógépeink közül!</p>
         </div>
     </div>
+    
+    <div id="overlay"></div>
+    <div id="cartModal">
+        <button id="closeCart">Bezár</button>
+        <p id="cart">Kosár tartalma</p>
+        <div id="pc_name_remove">
+            <img src="..\pictures\pc_example.jpg" alt="pc" id="pc">
+            <p id="pc_name">Gamer Számítógép #1</p>
+            <button id="delete"><img src="..\pictures\delete.png"></button>
+        </div>
+        <button id="pay">Fizetés</button>
+    </div>
+
     <div id="footer-container"></div>
     <script src="..\scripts\navbar.js"></script>
     <script src="..\scripts\main.js"></script>

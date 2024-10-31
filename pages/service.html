@@ -20,25 +20,39 @@
         <p id="option3-txt">Add meg az e-mail címedet és a nevedet!</p>
         <div id="buttons">
             <div class="service-pair">
-                <div class="button-service" id="service">Szerviz</div>
+                <button class="button-service" id="service">Szerviz</button>
                 <p class="pair-txt">Hibák okainak felfedése, javítás, vírusírtás, esetleges csere</p>
             </div>
             <div class="change-pair">
-                <div class="button-change" id="change">Alkatrészcsere</div>
+                <button class="button-change" id="change">Alkatrészcsere</button>
                 <p class="pair-txt">Kívánt hardver kicserélése, valamint szoftver telepítése</p>
             </div>
         </div>
         <div id="message-button">
-            <textarea placeholder="Üzenet"></textarea>
+            <textarea placeholder="Üzenet" id="message" required></textarea>
             <div class="button" id="send">Tovább</div>
         </div>
         <div id="email-name">
-            <input placeholder="Név"></input>
-            <input placeholder="E-mail "></input>
-            <div class="button2" id="final_send">Küldés</div>
+            <input placeholder="Név" id="name" autocomplete="name" required></input>
+            <input placeholder="E-mail"id="email"  autocomplete="email" required></input>
+            <input id="selected-service" type="hidden" value=""></input>
+            <button class="button2" id="final_send">Küldés</button>
         </div>
     </div>
     <div id="footer-container"></div>
+    
+    <div id="overlay"></div>
+    <div id="cartModal">
+        <button id="closeCart">Bezár</button>
+        <p id="cart">Kosár tartalma</p>
+        <div id="pc_name_remove">
+            <img src="..\pictures\pc_example.jpg" alt="pc" id="pc">
+            <p id="pc_name">Gamer Számítógép #1</p>
+            <button id="delete"><img src="..\pictures\delete.png"></button>
+        </div>
+        <button id="pay">Fizetés</button>
+    </div>
+    
     <script src="..\scripts\navbar.js"></script>
     <script src="..\scripts\service.js"></script>
 </body>

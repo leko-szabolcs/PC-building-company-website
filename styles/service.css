@@ -213,6 +213,9 @@ img {
 #hidden-image, #hidden-image2 {
   display: none;
 }
+#selected-service {
+  display: none !important;
+}
 
 @media (max-width: 1919px) {
   h2 {
@@ -246,7 +249,7 @@ img {
     width: 200px;
     height: 90px;
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
   
   .pair-txt  {
@@ -277,7 +280,7 @@ img {
     height: 65px;
     font-size: 20px;
     border-radius: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
   
   input {

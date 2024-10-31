@@ -1,0 +1,81 @@
+CREATE TABLE `users` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `online` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+CREATE TABLE `reviews` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `review_text` varchar(300) NOT NULL,
+  `starts` int(11) NOT NULL,
+  `name` varchar(250) NOT NULL,
+  `picure` mediumtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+
+
+ALTER TABLE `reviews` ADD CONSTRAINT `User_review_FK` FOREIGN KEY (`userID`) REFERENCES `users`(`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+CREATE TABLE `pc_site`.`subscription` (`UserID` INT NOT NULL , `subscribed` BOOLEAN NULL ) ENGINE = InnoDB;
+ALTER TABLE `subscription` ADD CONSTRAINT `User_sb_FK` FOREIGN KEY (`UserID`) REFERENCES `users`(`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+CREATE TABLE `orders` (
+  `orderID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `product_name` varchar(250) NOT NULL,
+  `picture` mediumtext NOT NULL,
+  PRIMARY KEY (`orderID`),
+  KEY `User_or_FK` (`userID`),
+  CONSTRAINT `User_or_FK` FOREIGN KEY (`userID`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+CREATE TABLE `payments` (
+  `paymentID` int(11) NOT NULL AUTO_INCREMENT,
+  `amount` int(11) NOT NULL,
+  `method` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  PRIMARY KEY (`paymentID`),
+  KEY `User_py_FK` (`userID`),
+  CONSTRAINT `User_py_FK` FOREIGN KEY (`userID`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+CREATE TABLE `products` (
+  `productID` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(250) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` int(11) NOT NULL,
+  `processor` varchar(250) NOT NULL,
+  `videocard` varchar(250) NOT NULL,
+  `motherboard` varchar(250) NOT NULL,
+  `memory` varchar(250) NOT NULL,
+  `psu` varchar(250) NOT NULL,
+  `ssd_hdd` varchar(250) NOT NULL,
+  `opsys` varchar(250) NOT NULL,
+  `ventillation` varchar(250) NOT NULL,
+  `cases` varchar(250) NOT NULL,
+  `second_hdd_ssd` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`productID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+CREATE TABLE `shopping_cart` (
+  `productID` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  `total` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  KEY `USER_sc_FK` (`userID`),
+  KEY `PROD_sc_FK` (`productID`),
+  CONSTRAINT `PROD_sc_FK` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `USER_sc_FK` FOREIGN KEY (`userID`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_c
+
+CREATE TABLE `pictures` (
+  `productID` int(11) NOT NULL,
+  `picture` mediumtext NOT NULL,
+  KEY `PROD_pc_FK` (`productID`),
+  CONSTRAINT `PROD_pc_FK` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci

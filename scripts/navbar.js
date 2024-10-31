@@ -1,5 +1,4 @@
 function includeHTML() {
-    //load navbar
     fetch('navbar.html') 
         .then(response => {
             if (!response.ok) {
@@ -10,13 +9,13 @@ function includeHTML() {
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
             setActivePage();
+            initializeCartModal();  // Initialize the cart modal logic after navbar is loaded
         })
         .catch(error => {
             console.error(error);
         });
 
-        //load footer
-        fetch('footer_navbar.html') 
+    fetch('footer_navbar.html') 
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to load bottom_navbar content: ${response.status} ${response.statusText}`);
@@ -25,18 +24,53 @@ function includeHTML() {
         })
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
-            setActivePage();
         })
         .catch(error => {
             console.error(error);
-            
         });
+}
+
+
+function initializeCartModal() {
+    const cartIcon = document.getElementById('cartIcon');
+    const overlay = document.getElementById('overlay');
+    const cartModal = document.getElementById('cartModal');
+    const closeCart = document.getElementById('closeCart');
+    const pay = document.getElementById('pay');
+
+    
+    if (!cartIcon || !overlay || !cartModal || !closeCart) {
+        console.error('One or more elements are not found: cartIcon, overlay, cartModal, or closeCart');
+        return;
+    }
+
+
+    cartIcon.addEventListener('click', function() {
+        overlay.style.display = 'block';  
+        cartModal.style.display = 'block'; 
+    });
+
+  
+    closeCart.addEventListener('click', function() {
+        overlay.style.display = 'none';  
+        cartModal.style.display = 'none'; 
+    });
+
+    
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        cartModal.style.display = 'none';
+    });
+
+    pay.addEventListener('click', function() {
+        window.location.href='pages/order.html';
+    });
+
 }
 
 function setActivePage() {
     const currentPath = window.location.pathname;
     var navLinks = document.querySelectorAll('.nav-link');
-
     const buttons = document.querySelectorAll('.button');
 
     navLinks.forEach(function(link) {
@@ -56,8 +90,6 @@ function setActivePage() {
             button.classList.remove('active');
         }
     });
-    
-    
 }
 
 document.addEventListener('DOMContentLoaded', includeHTML);

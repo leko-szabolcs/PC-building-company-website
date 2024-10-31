@@ -11,17 +11,33 @@
 <body>
     <div id="navbar-container"></div>
     <div id="center-container">
-        <div id="email-name">
+        <form id="email-form">
             <p id="txt1">Írj nekünk</p>
             <p id="txt2">Ha bármilyen kérdésed, problémád vagy egyéb észrevételed van, akkor nyugodtan küldj egy üzenetet. Számukra a te véleményed a legfontosabb!</p>
-            <input placeholder="Név"></input>
-            <input placeholder="E-mail "></input>
-            <p id="txt3">Üzenet:</p>
-            <textarea placeholder="Szöveg"></textarea>
-            <div class="button" id="final_send">Küldés</div>
-        </div>
+            <input placeholder="Név" id="name" autocomplete="name" required></input>
+            <input placeholder="E-mail" id="email" autocomplete="email" required></input>
+            <div id="txt3-error">
+                <p id="txt3">Üzenet:</p>    
+                <p id="error" style="color: red; display: none;">Maximum 100 karakter lehet!</p>
+            </div>       
+            <textarea id="message" placeholder="Szöveg" autocomplete="off" required></textarea>
+            <button class="button" type="submit" id="final_send">Küldés</button>
+        </form>
     </div>
     <div id="footer-container"></div>
+    
+    <div id="overlay"></div>
+    <div id="cartModal">
+        <button id="closeCart">Bezár</button>
+        <p id="cart">Kosár tartalma</p>
+        <div id="pc_name_remove">
+            <img src="..\pictures\pc_example.jpg" alt="pc" id="pc">
+            <p id="pc_name">Gamer Számítógép #1</p>
+            <button id="delete"><img src="..\pictures\delete.png"></button>
+        </div>
+        <button id="pay">Fizetés</button>
+    </div>
+    
     <script src="..\scripts\navbar.js"></script>
     <script src="..\scripts\contact.js"></script>
 </body>
