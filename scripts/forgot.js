@@ -11,7 +11,7 @@ document.getElementById('send').addEventListener('click', function(e) {
         email: email
     };
 
-    fetch('/send-email', {
+    fetch('/send-gen-passw', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

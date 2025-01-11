@@ -10,6 +10,8 @@
 </head>
 <body>
     <div id="navbar-container"></div>
+    <div id="loading-spinner">Loading...</div>
+    <div id="content" style="display: none;">
     <div id="center-container">
         <div id="left-container">
             <div id="big-pc">
@@ -20,10 +22,10 @@
                     <img src="..\pictures\pc_example.jpg" alt="pc">
                 </div>
                 <div id ="small-pc2">
-                    <img src="..\pictures\pc_example.jpg" alt="pc">
+                    <img src="..\pictures\pc_example_2.jpg" alt="pc">
                 </div>
                 <div id ="small-pc3">
-                    <img src="..\pictures\pc_example.jpg" alt="pc">
+                    <img src="..\pictures\pc_example_2.jpg" alt="pc">
                 </div>
             </div>
         </div>
@@ -80,19 +82,25 @@
             </div>
         </div>
     </div>
-    
     <div id="overlay"></div>
     <div id="cartModal">
         <button id="closeCart">Bezár</button>
         <p id="cart">Kosár tartalma</p>
         <div id="pc_name_remove">
-            <img src="..\pictures\pc_example.jpg" alt="pc" id="pc">
-            <p id="pc_name">Gamer Számítógép #1</p>
-            <button id="delete"><img src="..\pictures\delete.png"></button>
+            <div class="cart-item">
+                <img src="..\pictures\pc_example.jpg" alt="pc" id="pc">
+                <p id="pc_name">Gamer Számítógép #1</p>
+                <button id="delete"><img src="..\pictures\delete.png"></button>
+            </div>
+            <div class="cart-item">
+                <img src="..\pictures\pc_example.jpg" alt="pc" id="pc">
+                <p id="pc_name">Gamer Számítógép #2</p>
+                <button id="delete"><img src="..\pictures\delete.png" alt="Delete"></button>
+            </div>
         </div>
         <button id="pay">Fizetés</button>
     </div>
-    
+    </div>
     <div id="footer-container"></div>
     <script src="..\scripts\navbar.js"></script>
     <script src="..\scripts\pc_data.js"></script>

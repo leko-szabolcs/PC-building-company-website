@@ -21,7 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 95px;
+    padding: 93.5px;
 }
 
 #newp-box {
@@ -92,7 +92,7 @@ input[type="password"]:focus {
 
 @media (max-width: 1919px) {
     #center-container {
-        padding: 39px;
+        padding: 38.5px;
     }
     
     #newp-box {

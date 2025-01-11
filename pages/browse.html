@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="navbar-container"></div>
+    
     <div id="center-container">
         <div id="filter-container">
             <div id="processor-type">
@@ -33,12 +34,12 @@
             <div id="videocard-type">
                 <p id="type-txt2">Videókártya</p>
                 <div class="custom-checkbox-container">
-                    <span class="checkbox-text">Típus 1</span>
+                    <span class="checkbox-text">GeForce RTX 4070</span>
                     <input type="checkbox" id="type12-checkbox" class="custom-checkbox">
                     <label for="type12-checkbox"></label>
                 </div>
                 <div class="custom-checkbox-container">
-                    <span class="checkbox-text">Típus 2</span>
+                    <span class="checkbox-text">XFX Radeon RX 7800 XT</span>
                     <input type="checkbox" id="type22-checkbox" class="custom-checkbox">
                     <label for="type22-checkbox"></label>
                 </div>  
@@ -83,6 +84,8 @@
                     </div>
                 </div>
             </div>
+            <div id="loading-spinner">Loading...</div>
+            <div id="content" style="display: none;">
             <div id="pc-container">
                 <div id="scrollable-content">
                     <div id="item">
@@ -132,10 +135,10 @@
                     <div id="scroll-thumb"></div>
                 </div>
             </div>
+            </div>
         </div>
     </div>
     <div id="footer-container"></div>
-
     <div id="overlay"></div>
     <div id="cartModal">
         <button id="closeCart">Bezár</button>
