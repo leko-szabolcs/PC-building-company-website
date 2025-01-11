@@ -11,9 +11,9 @@ CREATE TABLE `reviews` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userID` int(11) NOT NULL,
   `review_text` varchar(300) NOT NULL,
-  `starts` int(11) NOT NULL,
+  `stars` int(11) NOT NULL,
   `name` varchar(250) NOT NULL,
-  `picure` mediumtext NOT NULL,
+  `picture` longtext NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
 
@@ -73,9 +73,21 @@ CREATE TABLE `shopping_cart` (
   CONSTRAINT `USER_sc_FK` FOREIGN KEY (`userID`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_c
 
-CREATE TABLE `pictures` (
+
+CREATE TABLE `product_images` (
+  `imageID` INT AUTO_INCREMENT PRIMARY KEY,
+  `productID` INT NOT NULL,
+  `imageURL` VARCHAR(255) NOT NULL,
+  `isPrimary` BOOLEAN DEFAULT FALSE,
+  FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `payment_products` (
+  `paymentID` int(11) NOT NULL,
   `productID` int(11) NOT NULL,
-  `picture` mediumtext NOT NULL,
-  KEY `PROD_pc_FK` (`productID`),
-  CONSTRAINT `PROD_pc_FK` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+  `quantity` int(11) NOT NULL,
+  KEY `PAYMENT_FK` (`paymentID`),
+  KEY `PRODUCT_FK` (`productID`),
+  CONSTRAINT `PAYMENT_FK` FOREIGN KEY (`paymentID`) REFERENCES `payments` (`paymentID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `PRODUCT_FK` FOREIGN KEY (`productID`) REFERENCES `products` (`productID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
